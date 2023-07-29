@@ -1,10 +1,7 @@
 let dotenv = require("dotenv")
 dotenv.config()
 
-
 let express = require("express")
-require('express-async-errors')
-
 require("./database")
 let app = express()
 let cors = require('cors')
