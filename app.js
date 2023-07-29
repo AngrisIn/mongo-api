@@ -18,7 +18,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
+let crud = require("./api/crud")
+app.use("/crud", crud)
 
 app.get("/", (_, res) => {
-	res.status(200).json({ message: "TTS Server Online" })
+	res.status(200).json({ message: "VIDEO CRUD Server Online" })
 })
